@@ -1,0 +1,161 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin:0px ; padding: 0px;">
+<div align='center'>
+   <label style="font-weight: 600; color: rgb(23, 146, 228);" for="">CERTIFICATE</label><br><br>
+   <input type="text" id='name'><button onclick="clic()" id="click">click</button><br>
+<div align='center' id="dd" style="border: 1px solid black; display: none;" ><iframe width="300px" height="200px
+    " src="" id='mypdf' frameborder="0"></iframe>
+    <a style="text-decoration: none;" onclick="dow()"><button onclick="dow()">
+        Download certificate
+    </button>
+</div>
+</div>
+<script src='https://unpkg.com/pdf-lib/dist/pdf-lib.min.js'></script>
+
+<script>
+
+    ss=['1','2','3','4']
+    function shuffle(array) {
+  var currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+sa= shuffle(ss)
+console.log(sa)
+
+
+
+    const generatePDF= async(name)=>{
+        const {PDFDocument,rgb}=PDFLib;
+        const exBytes=await fetch('./cert.pdf').then(res=>{
+            return res.arrayBuffer();
+        })
+        const pdfDoc=await PDFDocument.load(exBytes)
+        const pages=pdfDoc.getPages()
+        const firstPg=pages[0]
+        firstPg.drawText(name,{
+            x:300,
+            y:270,
+            size:50,
+        
+            color:rgb(.2,.4,.67)
+        })
+        const uri=await pdfDoc.saveAsBase64({dataUri:true})
+    
+        //saveAs(uri,"certificate.pdf",{ autoBom: true })
+        document.getElementById('dd').style.display='block'
+        document.getElementById('mypdf').src=uri
+    }
+    //const sub=document.getElementById('subo')
+    //const inp=document.getElementById('name')
+    //sub.addEventListener("click",()=>{
+      //  const val= inp.value
+    
+        //generatePDF('akhikl')
+        
+    //})
+    function clic(){
+        var ss=document.getElementById('name').value
+        generatePDF(ss)}
+
+
+    const genertePDF= async(name)=>{
+        const {PDFDocument,rgb}=PDFLib;
+        const exBytes=await fetch('./cert.pdf').then(res=>{
+            return res.arrayBuffer();
+        })
+        const pdfDoc=await PDFDocument.load(exBytes)
+        const pages=pdfDoc.getPages()
+        const firstPg=pages[0]
+        firstPg.drawText(name,{
+            x:300,
+            y:270,
+            size:50,
+        
+            color:rgb(.2,.4,.67)
+        })
+        const uri=await pdfDoc.saveAsBase64({dataUri:true})
+    
+        saveAs(uri,"certificate.pdf",{ autoBom: true })
+        document.getElementById('dd').style.display='block'
+        document.getElementById('mypdf').src=uri
+    }
+    const sub=document.getElementById('subo')
+    const inp=document.getElementById('name')
+    sub.addEventListener("click",()=>{
+        const val= inp.value
+    
+        generatePDF(val)
+        
+    })
+    function dow(){
+        
+      //const val= inp.value
+    
+        genertePDF(ss)
+        
+        saveAs(uri,"certificate.pdf",{ autoBom: true })
+    }
+    </script>
+
+
+
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        /* Randomize array in-place using Durstenfeld shuffle algorithm */
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
+var arrr=[1,2,3,4,5,6,7,8]
+shuffleArray(arrr)
+console.log(arrr[0])
+console.log(arrr[1])
+console.log(arrr[2])
+console.log(arrr[3])
+console.log(arrr[4])
+console.log(arrr[5])
+console.log(arrr[6])
+console.log(arrr[7])
+
+    
+    </script>
+    
+</body>
+</html>

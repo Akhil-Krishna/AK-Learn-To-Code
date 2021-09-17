@@ -1,0 +1,157 @@
+.swtiming{
+    float: left;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 2vh;
+    padding-right: 0px;
+   
+    
+
+}
+#swinnertime{
+    margin-left: 70%;
+    width: 40%;
+    border: 1px outset rgb(175, 201, 57);
+    background-color: rgb(240, 179, 12);
+    align-items: center;
+    border-radius: 70%;
+    padding-top:1vh ;
+    margin-right: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 5.1vw;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    max-height: 100px ;
+    margin-bottom: 1vh;
+    box-shadow:1px 1px rgb(137, 197, 221) ;
+    -webkit-box-shadow:1px 2px 3px rgba(0,0,0,0.7);
+    -moz-box-shadow:1px 2px 3px rgba(0,0,0,0.7) ;
+    min-height: 60px;
+    
+}
+.swscoring{
+    float: left;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+    margin-right: 0px;
+    padding: 0px;
+    width: 100%;
+    
+
+}
+#swinnerscore{
+    background-color: rgb(216, 157, 40);
+    margin-left: 50%;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(232, 240, 243);
+    font-weight: 790;
+    width: fit-content;
+
+
+
+}
+.swquestionbank{
+    margin-top:7vh ;
+    color: rgb(67, 67, 112);
+    font-size: 3.5vw;
+    font-family: serif;
+}
+.swsect{
+    margin:10px;
+    margin-top: 7vh;
+    padding:16px ;
+    margin-right: 20px;
+    border-radius: 20px;
+   /* border:1px outset darkblue;*/
+    box-shadow:5px 5px 5px rgb(111, 149, 172);
+    -webkit-box-shadow:8px 0px 20px 13px rgb(118, 165, 184);
+    -moz-box-shadow:8px 10px 20px 13px rgb(103, 183, 194) ;
+
+}
+
+.swopt{
+
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration:none ;
+    border-radius: 15px;
+   min-height: 6.2vh;
+    min-width: 45vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px rgba(123, 178, 180,0.5) ;
+    -webkit-box-shadow:5px 3px 5px 5px rgba(110, 181, 194, 0.5);
+    -moz-box-shadow:3px 2px 5px 5px rgba(132, 191, 206, 0.5);
+    color: rgb(27, 27, 110);
+    font-size: 2.9vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.swopt:hover{
+    background-color: rgb(230,225,255);
+    min-height: 6.6vh;
+    min-width: 46.2vw;
+    font-size: 3.1vw;
+    font-weight: 540;
+    color: rgb(0, 0, 233);
+}
+
+
+#download-btn:hover{
+    background-color: rgb(125, 213, 233);
+    color: rgb(79, 79, 231);
+}
+/*
+@media screen and (max-width:300px) {
+    canvas{
+    
+        height: 240px;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    canvas{
+        height: 250px;
+    }
+    
+}
+@media screen and (max-width:370px) {
+    canvas{
+        
+        height: 290px;
+    }
+}
+@media screen and (max-width:400px) {
+    canvas{
+        width: 350px;
+        height: 300px;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    canvas{
+        
+        height: 444px;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    canvas{
+    
+        height: 580px;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    canvas{
+        height: 620px;
+    }
+    
+@media screen and (max-width:1320px) {
+        canvas{
+            height: 700px;
+        }
+}
+}*/

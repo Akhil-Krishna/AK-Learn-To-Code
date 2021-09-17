@@ -1,0 +1,132 @@
+.top{
+    min-height: 27vh; width: 100%; 
+    float: left;
+    font-size: 7VW;
+    
+    padding-left:2vw;
+    
+    margin-top: 5vh;
+    font-weight: 1000;
+    color: cornflowerblue;
+    text-shadow:2px 2px darkblue;
+    
+    
+    }
+    
+    .provider{
+        display: none; color: red; background-color: rgba(255,255,255,0.3); border-radius: 10px; padding-left: 4px; padding-right: 4px; margin-top:2px ;
+    }
+    
+    .boy{
+        box-shadow: 1px 1px rgb(12, 0, 0);
+        -webkit-box-shadow:11px 14px 7px rgba(0,0,0,0.5);
+        -moz-box-shadow:11px 14px 7px rgba(0,0,0,0.5);
+        margin: 5vh;
+        margin-top: 17%;
+        margin-left: 6px;
+        background-color: rgba(116, 252, 252,0.4);
+        width: 80%;
+        border-radius: 17px;
+     
+        padding: 1.5rem;
+        padding-top: 2.3rem;
+        overflow: auto;
+    }
+    .boy input{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+        background-color: rgba(116, 252, 252,0.0) ;
+        color: white;
+    }
+    #headng{
+        
+           color: rgb(189, 240, 123);
+        font-style: inherit;
+        font-weight: 1000;
+        font-size: 1.4rem;
+    }
+    
+    #sub{
+        text-decoration: none;
+        border:1px outset teal ;
+        border-radius: 20px;
+        
+        padding:2px 10px;
+        background-color: teal;
+        color: white;
+    }
+    
+    
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color:whitesmoke;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: whitesmoke;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: whitesmoke;
+      }
+      
+
+
+
+/*
+@media screen and (max-width:300px) {
+    canvas{
+    
+        height: 240px;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    canvas{
+        height: 250px;
+    }
+    
+}
+@media screen and (max-width:370px) {
+    canvas{
+        
+        height: 290px;
+    }
+}
+@media screen and (max-width:400px) {
+    canvas{
+        width: 350px;
+        height: 300px;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    canvas{
+        
+        height: 444px;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    canvas{
+    
+        height: 580px;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    canvas{
+        height: 620px;
+    }
+    
+@media screen and (max-width:1320px) {
+        canvas{
+            height: 700px;
+        }
+}
+}*/
+#download-btn:hover{
+    background-color: rgb(125, 213, 233);
+    color: rgb(79, 79, 231);
+}

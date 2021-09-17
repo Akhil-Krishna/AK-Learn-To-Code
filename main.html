@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK-Learn To Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="selection.css">
+    <link rel="stylesheet" href="online_quiz.css">
+    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="pyquiz.css">
+    <link rel="stylesheet" href="cquiz.css">
+    <link rel="stylesheet" href="rubyquiz.css">
+    <link rel="stylesheet" href="webquiz.css">
+    <link rel="stylesheet" href="javaquiz.css">
+    <link rel="stylesheet" href="swiftquiz.css">
+    <link rel="stylesheet" href="phpquiz.css">
+    <link rel="stylesheet" href="dartquiz.css">
+    <link rel="shortcut icon" href="iconic.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body id='simple'>
+
+<!--main.html   -->
+
+
+    <div>
+    <div class="topper col-12 col-xl-12">
+        <img src="iconic.png" alt="">
+       
+        <h1><span style="font-family:serif; font-size: 10.5vw; font-weight: 700; color: rgb(255, 255, 255);">AK</spa><span style="font-size: 7.4vw; color: rgb(166, 187, 247);">-Learn To Code</span></h1>
+    </div>
+    </div>
+    <!--This is a modulo which shows the achievements of this quiz program-->
+    <div>
+    <div id='main_modulo' style="   position:fixed; top: 0%; z-index:5;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6);" align='center'>
+    
+        <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgb(95, 53, 201);
+         color:white;
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 63%;
+        height: 390px;
+        margin-top: 10%;">
+            <button  style="float:left;   padding-right:5px; margin-top: 0;"  onclick="main_makeoff()">&#10060;</button>
+            <br>
+            <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 3px;"> Achievements</span>
+            <hr color="white">
+            <ol  style="overflow:auto; padding-right: 20px; text-decoration: none;">
+                <li>Will get the exclusive certificate with your grade for the online quiz competition</li><br>
+                <li>Exclusive video classes on programming topics with a presentation</li><br>
+                <li>Extra free practice quiz sections on which you can practice any number of times</li><br>
+                <li>The grade will be calculated based on your score</li><br>
+                <li>Will get a fair idea about programming languages</li><br>         
+                <li>Exclusive learning modules (under development)</li>
+            </ol>
+
+        </div>
+    </div>
+    </div>
+    
+    <div>
+    <div style="margin-top: 25px;">
+        <div class="bodyer col-12 col-md-6" >
+            <br>
+            <br>
+            <h3 class='crops'>This is a cool and powerful web app that contains a lot of quizzes on almost all languages, an online quiz competition every week, and also video classes about programming and all.
+                
+            <br>
+            <br>
+            <span> So you must register in order to explore this app
+            <br>
+            </span></h3>
+        </div>
+        <div class="bodyer col-12 col-md-6 ">
+            <br>
+            <br>
+            <h3 class='crops'>The quiz is completely based on programming languages like Python, Java, JS, C, C++, Ruby, Swift 4, PHP, Dart, and also markup languages like HTML5 and stylesheet CSS
+            <br>
+            <br>
+            <span>This app contains practice sections and also video sections to improve your skill</h3>
+            <br>
+
+            <h3></h3>
+        </div>
+        <br>
+        <div align='center' class="onand buttonic col-12  col-md-6">
+        
+            <a onclick="main_makeon()"  style="font-family:Courier New;text-decoration:none; color:rgb(238, 248, 238); background-color: rgb(29, 116, 29); font-size:1.1rem; border: 2px solid rgb(29, 116, 29); background-color: rgb(42, 189, 62); border-radius: 25px; margin-bottom: 16px; padding: 6px; cursor: pointer; width: 2vw; ">achievements</a>
+        </div>
+        
+        <div align='center' class="buttonic bodyer col-12  col-md-6 col-xl-6">
+           
+            <a id="anchar" onclick="open_signup()" style="cursor: pointer; width: fit-content;">Register for  quiz</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-xl-12">
+            <br>
+            <br>
+        
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--registration.html-->
+    <div>
+        <div id='signing' style=" overflow: auto;  position:fixed; top: 0%; z-index:5;display:none;margin: 0px; width: 100%; height:100vh; background-image: linear-gradient(0deg,rgb(240, 216, 157),rgb(23, 37, 43),rgb(133, 133, 216));" align='center'>
+            <div align='right'><span onclick="backbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); color: white; border-radius: 0px 0px 0px 10px; background-color:  rgb(58, 87, 83); margin-top: 0px; padding: 0px 8px; font-weight: 600;">Back</span></div>
+           <div align='left'> <img src="iconic.png" width="50px" height="50px" style="margin: 10px;" alt="Loading.."><span style="color: blanchedalmond; font-weight: 700;">AK-Learn To Code</span></div> 
+        <!--<img style="position: absolute; height: 110vh; width: 100%;" src="signup.jpg" alt="">
+         --> <div style=" width: 100%; height: 100vh;">
+        
+        <div align='center' class="top col-12 col-md-12 col-lg-7 col-xl-7" >
+            REGISTRATION FORM
+            <br><p style="font-size: 16px; margin-top: 5px; color: rgb(210, 209, 241); font-weight: 500; text-shadow: none;">Fill in the correct details without any fail as every field is required and based on it , data is stored for ranking and also for the certificates </p> </span> 
+        </div>
+        <div style="float: left;" align='center' class="col-12 col-md-12 col-lg-5 col-xl-5">
+            <div align='center' class="boy">
+                <label id='headng' for="">Sign Up</label><br>
+                <br>
+
+               <!-- <form action="#" onsubmit="return validate()">-->
+             <!--<img src="user icon.PNG" width="20px" height="20px" style="border-radius: 100%;" alt="">  
+             --><input id='fname' placeholder="First Name" type="text" required>
+                <br><label class="provider" id='btnname'>Please provide correct name</label>
+                <br>
+                <input id="lname" placeholder="Last Name" type="text" required>
+                <br><label class="provider" id='btnlname'>Please provide correct name</label>
+                <br>
+                <input id='aging' placeholder="Age" type="number" required>
+               <br><label class="provider" id='btnage'>Please provide correct age</label>
+            
+                <br>
+                <input id='gend1' type="radio" name="gender" value='male' required><span style="color: white;">Male</span>
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="gend2" type="radio" name="gender" value='female'><span style="color: white;">Female</span>
+           <br><label class="provider" id="btnradio">Please fill the gender column</label> <br><button onclick="to_selection()" id="sub">Sign up</button>
+               <!-- </form>-->
+                
+                
+                
+
+
+            </div>
+        </div>
+
+    </div>
+           
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!--Selection.html-->
+
+<div>
+    <div id='selecting' style="   position:fixed; top: 0%; z-index:6;display:none;margin: 0px; width: 100%; height:100vh; padding-top: 0px; background-color: whitesmoke; overflow: auto;" align='center'>
+        <!--<div align='right' style="background-color: rgb(23, 23, 151); border: 1px solid rgb(23, 23, 151);"><span onclick="backbutton_sel()" style="font-size:medium; cursor: pointer; border: 1px solid rgb(255, 255, 255); color: white; border-radius: 0px 0px 0px 10px; background-color:  rgb(58, 87, 83); margin-top: 0px; padding: 0px 8px; font-weight: 600;">Back</span></div>
+        --><div id='selmodulo' style="   position:fixed; top: 0%; z-index:5;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0, 0, 0, 0.82); padding: 2px;" align='center'>
+            
+            <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(113, 153, 190, 1);
+             color:white;
+            border-radius: 10px;
+            width: 69%;
+            max-height: 75vh;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-bottom: 10px;
+            overflow: auto;
+            margin-top: 10vh;">
+                <button  style="float:left;   padding-right:5px; margin-top: 0;"  onclick="selmakeoff()">&#10060;</button>
+                <br>
+                <br>
+            
+                <div style="padding: 10px; padding-top: 5px;">
+                <span align='center' style="  font-size: 16px; margin-top: 5px; padding-top: 20px; margin-bottom: 17px; color: rgb(223, 223, 238); ">This page has a lot of quiz series, to enroll in it just<span style="color: rgb(203, 202, 224); font-weight: 700; "> <em>click on the card(box)</em></span> with the programming language's name <br>Here you will get online competitions and also practice sections ,all you need to do is click on the icon or box with your desired language for practicing </span>
+                <p style="font-family: sans-serif;
+                font-weight: 600;
+                color: palegreen;"><u>SOME NOTES</u></p>
+                <p>1. If you need any help regarding any following steps, please <span style="color: blue; cursor: pointer;" onclick="extrahelperf()">click here</span> </p>
+                <p>2. You can participate in the online quiz competition only once, after that it will be disabled so attend it carefully</p>
+                <p>3. Practice quizzes are meant for practicing and you can attend them any number of times </p>
+                <p>4. Certificate is available only for online section , practice sections do not have certificates</p>
+                 
+                <p style="font-family: sans-serif;
+                font-weight: 600;
+                color: palegreen;"><u>RULES FOR QUIZ</u></p>
+                <p>1. Each question has 15 seconds for answering</p>
+                <p>2. Total 10 questions</p>
+                <p>3. After clicking an option there itself you will get to know which option is correct</p>
+                <p>4. Correct option is displayed in green color and wrong ones in red</p>
+                <p>5. If you want to avoid certain questions just click on the <em>Next</em> button</p>
+                <p>6. At last you have to click on <em>proceed</em> button on the pop-up screen, then you will get the mark sheet with your grade, result, name and also a message based on your performance</p>
+                <p>7. For online quiz sections you will get an extra certificate unlike the practice section</p>
+
+
+                    <br>
+                    <p>NOTE:- You can attend a specific online quiz competition only once but can attend practice sections multiple times</p>
+                    <span onclick="extrahelperf()" style="cursor: pointer; color: rgb(19, 0, 145); font-weight: 550;"><u>Extra video help?</u></span>
+
+            </div>
+            
+             
+            
+        
+        </div>
+        </div>
+        <div style="position: fixed; top: 45%; right: 0%; left: 90%; z-index: 1;">
+        <div style="background-color: brown; padding: 5px 1px;"><a href="https://instagram.com/a.k_thecoder?utm_medium=copy_link"><img src="insta.PNG" alt="" width="30px" height="30px" style="border-radius: 100%;"></a></div>
+            <div style="background-color: rgb(19,77,120); padding: 5px 1px;"><a href="id.PNG"><img src="dis.PNG" alt="" width="30px" height="30px" style="border-radius: 100%; margin-left: 5px;"></a></div>
+        </div>
+
+
+        <div id='extrahelper' style=" height: fit-content;  position:fixed; top: 0%; z-index:7;display:none;margin: 0px; width: 100%; height:100vh; padding-top: 0px; background-color: rgba(0, 0, 0, 0.8); overflow: auto;" align='center'>
+
+            <!--<div align='right' style="background-color: rgb(23, 23, 151); border: 1px solid rgb(23, 23, 151);"><span onclick="backbutton_sel()" style="font-size:medium; cursor: pointer; border: 1px solid rgb(255, 255, 255); color: white; border-radius: 0px 0px 0px 10px; background-color:  rgb(58, 87, 83); margin-top: 0px; padding: 0px 8px; font-weight: 600;">Back</span></div>
+            -->
+        
+            <div>
+             <div  align='left'>   <span onclick="extrahelperoff()" style="position: fixed; cursor: pointer; color: floralwhite; background-color:rgb(10, 57, 95); padding:7px; font-weight: 600; border-right: 2px outset white; border-bottom: 2px outset white;">Back</span></div>
+             <br>
+             <br>
+           <div style="padding: 8% 5% 4% 5%;">  <video id='videoo' style="border: 2px solid rgb(250, 245, 236);" width="90%" height="55%" src="video.mp4" controls unmuted></video>   
+            </div>
+            <div style="padding: 5px 5px; border: 1px solid wheat; background-color: rgb(8, 100, 178); border-radius: 8px; text-align: center; margin: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 19px; color: rgb(238, 255, 206); width: fit-content; ">NOTE :- The voice in the video is just artificially created only for the video purpose</div>
+
+            
+        </div>
+            
+            </div>
+
+        <!--video class sections-->
+        <div id='video_forum' style=" height: fit-content;  position:fixed; top: 0%; z-index:7;display:none;margin: 0px; width: 100%; height:100vh; padding-top: 0px; background-color: black; overflow: auto;" align='center'>
+
+            <!--<div align='right' style="background-color: rgb(23, 23, 151); border: 1px solid rgb(23, 23, 151);"><span onclick="backbutton_sel()" style="font-size:medium; cursor: pointer; border: 1px solid rgb(255, 255, 255); color: white; border-radius: 0px 0px 0px 10px; background-color:  rgb(58, 87, 83); margin-top: 0px; padding: 0px 8px; font-weight: 600;">Back</span></div>
+            -->
+        
+            <div>
+             <div  align='left'>   <span onclick="video_forum_off()" style="position: fixed; cursor: pointer; color: rgb(255, 255, 255); background-color:rgb(7, 86, 139); padding:5px; font-weight: 600; border-right: 2px outset white; border-bottom: 2px outset white; border-radius: 0 0 6px 0;">Back</span></div>55)
+             <br>
+             <p><h3 style="color: rgb(174, 199, 216); font-size: 5vw; font-weight: bolder; border: 1px solid white; border-radius: 7px; padding: 4px; margin: 5px;">All about programming-A simple video presentation</h3></p>
+             
+             <hr color="grey" >
+           <div align='center' style="margin-bottom: 8px;">  <video  id='videoo' style=" border-radius: 5px; border: 1px solid rgb(251, 251, 255);" width="90%" height="55%" src="video.mp4" controls unmuted></video>   
+            
+        </div>
+        <hr>
+            <div style="padding: 1px 3px 1px 3px; text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 17px; color: rgb(212, 218, 235); border-radius: 7px; border:1px solid rgba(152, 176, 199, 0.99); margin:1px 5px ; width: fit-content;">
+                <h4><u>Description</u>:</h4>
+                <p>The above video deals with programming and its different angles.It involves cool presentation and it also has a lot of informative contents</p>
+            </div>
+            <p></p>
+
+            
+        </div>
+            
+            </div>
+        
+        
+        
+        
+        
+        <div class="col-12 col-xl-12 seltop">
+            
+          <span align='left'>  <span style="float: left;" class="col-9 col-11">   <img style="margin-bottom: 12px;" src="iconic.png" width="50px" height="49px" style="margin-left:5px;padding-left: 6px; padding-top: 2px; padding-bottom: 10px;" alt=""><span align='center' style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:aliceblue;  font-weight: 800; margin-top: 4vh; margin-left: 7px; font-size: 3.7vw; padding-bottom: 5px;">AK-Learn To Code</span> </span>
+             </span> <div align='center' onclick="selmakeon()" onmouseover="selmouseov()" onmouseout="selmouseou()" style="float: left; margin-top: 10px; width: 10px;"><span id="selinfo"> i</span><br><span id="selinf" style="margin-bottom:0px; display: none; font-size: 1.9vw;">click</span></div>
+            
+        </div>
+        <div align='right'><div align='center' class="col-12 col-xl-12" style="width: fit-content; background-color: rgb(8, 141, 101); display: block; border-radius: 15px 0px 0px 15px;"><u style="color: white; font-size: 3px;"><span onclick="extrahelperf()" style="cursor: pointer; color: rgb(255, 255, 255); font-weight: 400; font-size: 15px; font-weight: 600;">Video help?</span></u></div>
+        </div>
+        <div style="width: 100%;  background-color: rgba(44, 29, 95, 0.4); color: rgb(40, 24, 70) ; font-weight: 700; border: 1px solid rgba(78, 62, 62, 0.7); padding-bottom:15px; margin-top: 11px; padding-left: 8px; font-weight: 600;" align='center'>
+            Exclusive Online Quiz Competition based on 5+ programming languages and markup languages <br>  <u><a style="color: rgb(36, 75, 146); text-underline-position: auto; cursor: pointer;" onclick="online_quiz_open()">Click here</a></u> or click the icon with the text 'online quiz competition' to attend the quiz and you can attend one competition only once
+        <br>These types of online quiz competitions will be held here every Monday from 6 pm to Tuesday 6 pm (STD Indian Time)
+        </div>
+        
+        
+        <!--online-->
+        <div align='center' style="margin-bottom: 5px; padding: 6px; background-color:rgba(184, 223, 159, 0.4); margin-top: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 5.2vw; color: rgb(50, 38, 126); font-weight: 700;"><span>Online Quiz Sections</span></div>
+        
+        
+        <div align='center'  class="col-12">   
+        <div  align='center' class="selcard">
+            <a style="text-decoration: none; z-index: 10;" onclick="online_quiz_open()">
+                <div align='center'><img src="iconic.png" width="200px" height="200px" alt=""></div>
+                <div class="selcardname"><span style=" color: blue; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Online Quiz Competiton </span></div>
+            </a>
+        </div>
+        </div>
+
+        <!--video section-->
+        <div align='center' style="margin-bottom: 5px; padding: 6px; background-color:rgba(184, 223, 159, 0.4); margin-top: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 5.2vw; color: rgb(50, 38, 126); font-weight: 700;"><span>Video Class Sections</span></div>
+        
+        
+        <div align='center'  class="col-12">   
+        <div  align='center' class="selcard_vid" id="videotag">
+            <a style="text-decoration: none; z-index: 10;" onclick="video_forum_open()">
+                <div align='center'><img id="videoresize" src="video_thumb1.PNG" style="width:300px; height:200px;" alt=""></div>
+                <div class="selcardname_vid"><span style=" color: rgb(3, 3, 31); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">All about Programming <br> -A Simple Video </span></div>
+            </a>
+        </div>
+        </div>
+        
+        <!--practice mode-->
+        <div align='center' style="padding: 6px; margin-bottom: 5px; background-color:rgba(184, 223, 159, 0.4) ; margin-top: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 5.2vw; color: rgb(50, 38, 126); font-weight: 700;"><span>Practice Quiz Sections</span></div>
+        
+        <div align='center' style='float: left;  margin-bottom: 35px;' class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div  align='center' class="selcard">
+                <a style="cursor: pointer; z-index: 10; text-decoration: none;" onclick="py_quiz_open()">
+                    <span>
+                    <div style="cursor: pointer;" align='center'><img src="pylogo.png" width="200px" height="200px" alt=""></div>
+                    <div class="selcardname"><span style="color: rgb(121, 131, 29); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Python Quiz  </span></div>
+                    </span>
+                </a>
+            </div>
+        </div>
+        
+        <div align='center' style="float: left;  margin-bottom: 35px;" class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div align='center' class="selcard">
+                <a style="cursor: pointer; z-index: 10; text-decoration: none;" onclick="ry_quiz_open()">
+                    <div align='center'><img src="ruby.PNG" width="200px" height="200px" alt=""></div>
+                    <div class="selcardname"><span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(143, 19, 36);">Ruby Quiz</span></div>    
+                </a>
+            </div>
+        </div>
+        
+        
+        <div align='center' style='float: left;  margin-bottom: 35px;' class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            
+            <div  align='center' class="selcard">
+                <a style="cursor: pointer; z-index: 10; text-decoration: none;" onclick='c_quiz_open()'>
+                    <div align='center'><img src="c_c++.PNG" width="240px" height="200px" alt=""></div>
+                    <div class="selcardname"><span style="color: rgb(110, 111, 168); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">C/C++ Quiz </span></div>
+                </a>
+            </div>
+        
+            
+        </div>
+        
+        
+        <div align='center' style='float: left; margin-bottom: 35px;' class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div  align='center' class="selcard">
+                <a style="cursor: pointer; z-index: 10; text-decoration: none;" onclick="web_quiz_open()">
+                    <div align='center'><img src="html.PNG" width="230px" height="200px" alt=""></div>
+                    <div class="selcardname"><span style="color: rgb(121, 131, 29); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Front End Phase Quiz </span></div>
+                </a>
+            </div>
+        </div>
+        
+        
+        <div align='center' style='float: left; margin-bottom: 35px;' class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">  
+            <div  align='center' class="selcard">    
+                <a style="cursor: pointer; z-index: 10; text-decoration: none;" onclick="jv_quiz_open()">
+                    <div align='center'><img src="java.PNG" width="230px" height="200px" alt=""></div>
+                    <div class="selcardname"><span style="color: rgb(202, 128, 17); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Java Quiz </span></div>
+                </a>
+            </div>
+        </div>
+        
+        
+        <div align='center' style='float: left; margin-bottom: 35px;' class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div  align='center' class="selcard">    
+                <a style="cursor: pointer; z-index: 10; text-decoration: none;" onclick="sw_quiz_open()">
+                    <div align='center'><img src="swift.PNG" width="230px" height="200px" alt=""></div>
+                    <div class="selcardname"><span style="color: rgb(202, 17, 17); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Swift Quiz </span></div>
+                </a>
+            </div>    
+        </div>
+        
+        <br><br><br><br><br>
+        <br><br>
+        <div align='center' style='float: left; margin-bottom: 35px;' class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div  align='center' class="selcard">    
+                <a style="cursor: pointer; z-index: 10; text-decoration: none;" onclick="ph_quiz_open()">
+                    <div align='center'><img src="php.PNG" width="230px" height="200px" alt=""></div>
+                    <div class="selcardname"><span style="color: rgb(103, 17, 202); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">php Quiz </span></div>
+                </a>
+            </div>   
+             
+        </div>
+        <div align='center' style='float: left; margin-bottom: 35px;' class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div  align='center' class="selcard">    
+                <a style="cursor: pointer; z-index: 10; text-decoration: none;" onclick="dt_quiz_open()">
+                    <div align='center'><img src="dart.PNG" width="230px" height="200px" alt=""></div>
+                    <div class="selcardname"><span style="color: rgb(103, 17, 202); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Dart Quiz </span></div>
+                </a>
+
+            </div>   
+          
+        </div>
+        
+        
+        
+        
+        <p> </p>
+        <br>
+        <hr style="color: rgb(49, 15, 170);">
+        <hr>
+        <hr>
+
+        <p></p>
+        <hr>
+        <span>________________________________</span>
+        <br>
+        <a href="https://instagram.com/a.k_thecoder?utm_medium=copy_link"><img src="insta.PNG" alt="" width="20px" height="20px" style="margin-top: 2px; margin-bottom: 7px; border-radius: 100%;"></a>
+        <a href="id.PNG"><img src="dis.PNG" alt="" width="20px" height="20px" style="border-radius: 100%; margin-left: 15px; margin-bottom: 8px;"></a>
+        
+        <div style=" color:rgb(17, 37, 150); text-align: center; font-family: cursive; font-weight:550 ; "><a href="mailto: aklearntocode@gmail.com"><span style="margin-bottom: 4px; color: rgb(42, 106, 202); font-weight: 600;"><img src="mail.jpeg" width="35px" height="35px" alt="" style="margin-right: 5px; border-radius: 100%;">aklearntocode@gmail.com</span></a></div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+</div>
+
+
+
+
+<!--          .........................online quiz ............................-->
+
+    <div>
+    <div class="closing_icon" id='imodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:whitesmoke;" align='center'>
+        
+        <div>
+            <div id='modulo_onl' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image: linear-gradient(180deg,#592fc5,rgb(32, 31, 31));
+                 color:white;
+                border-radius: 10px;
+                width: 62%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div align='center'>
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this amazing quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span align='center'  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw; text-align: center; float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="makeoff()">Yes</span>
+                </div>
+                <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                    <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.6vw;  float: left;" 
+                    onclick="online_offer()">No</span>
+                </div>
+                
+                
+            </div>
+            </div>
+    
+            <div id='modulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                 color:white;
+                border-radius: 10px;
+                width: 50%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span onclick="res_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                </div>
+                
+                </div>
+                
+                
+            </div>
+            </div>
+    
+    <div style="padding-bottom: 10vh; background-image: linear-gradient(180deg,rgb(15, 15, 15),rgb(93, 93, 207)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+        <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+        <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="Loading.."><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+        
+        </div>
+        <div align='right' class="timing col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+           <div align='center' id='innertime'><span align='center'><span id="just">15</span></span></div>
+        </div>
+        <div align='right' class="scoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+            <div align='center' id="innerscore">Score:0</div>
+        </div>
+        <br>
+    </div>
+    <div align='center' class="col-12 col-xl-12">
+     <div class="sect">
+        <div align='center' id="question" class="questionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                Question
+        </div>
+        <br>
+        <br>
+        <div class="col-12 col-md-12">
+    
+        <button id="o1" class="opt"   onclick="btnc(0)"> Answer1</button>
+        
+        </div>
+        <br>
+        <div class="col-12 col-md-12">
+        <button id="o2" class="opt"  onclick="btnc(1)">Answer2</button>
+        </div><br>
+        <div class="col-12 col-md-12">
+        <button id="o3" class="opt"  onclick="btnc(2)">Answer3</button></div><br>
+        <div class="col-12 col-md-12"><button id="04" class="opt" onclick="btnc(3)" >Answer4</button></div>
+        <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="next" onclick="next()">Next</button></div>
+     </div>
+    </div>
+
+    <div align='center' style="color: cornsilk; margin-top: 12vh; border-top: 1px solid rgb(36, 75, 146); padding:10px 5px ; background-image:linear-gradient(180deg,rgb(66, 106, 180),rgb(19, 18, 18));">
+        <span><span style="font-weight: 900;">TIP</span> :- <span id="foot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+        <p></p>
+        
+     </div>
+        
+    </div>
+    </div>
+
+<!-- .........            .........Result.html........             .............-->
+
+<div>
+    <div class="closing_tab" id='res_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+        
+        <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; ">
+            <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600; margin-top: 0; margin-right: 0;">Back</span></div>
+            <div style="vertical-align: center;">
+            <img src="iconic.png" width="53px" height="53px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;"><span>AK-Result Sheet</span>
+        </div>
+        </div>
+        <div style="margin-bottom:30px;" align='center'>
+            <div id="box">
+                <div class="col-12 col-xl-12 log">
+                    <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="">
+    
+                </div>
+                <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                    <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Name : <span style="color: black; font-weight: 550;" id='onlshow_name'></span>
+                    </div>  
+                    <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Age : <span style="color: black;" id='onlshow_age'></span>
+                    </div> 
+                    <br>
+                    <br>
+                <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                    <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='onlshow_score' style="overflow: auto;"></span>
+                    </div> 
+                    <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Grade : <span style="color: #020202;" id='onlshow_grade'></span>
+                    </div>
+                    <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Result : <span style="font-family: cursive; font-weight: bolder;"  id='onlshow_result'></span>
+                    </div> 
+                </div>
+                <p></p>
+                <br>
+    
+                    <div id='msgid' style="margin-bottom: 10px;" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='onlshow_msg'></span>
+                    </div>
+                    <button style="border-radius: 10px; display: block; background-color: blue; color: white; font-size: 3.4vw; padding: 5px; width: 100%; cursor: pointer; margin-top: 20px;" onclick="cert_open()">Certificate</button>
+                           
+                </div>
+    
+    
+    
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--       .................             python Quiz............         .........-->
+        <div>
+    <div class="closing_icon" id='pymodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:rgb(214, 226, 162);" align='center'>
+        
+        <div>
+            <div id='modulo_py' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image:linear-gradient(180deg,rgb(85, 30, 136),rgb(163, 163, 60));
+                 color:white;
+                border-radius: 10px;
+                width: 62%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this python quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="pymakeoff()">Yes</span>
+                </div>
+                <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                    <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.6vw;  float: left;" 
+                    onclick="py_offer()">No</span>
+                </div>
+                
+                
+            </div>
+            </div>
+    
+            <div id='pymodulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                 color:white;
+                border-radius: 10px;
+                width: 50%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span onclick="pyres_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                </div>
+                
+                </div>
+                
+                
+            </div>
+            </div>
+    
+    <div style="padding-bottom: 10vh; background-image: linear-gradient(0deg,rgb(33, 81, 185),rgb(197, 197, 32)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+        <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+        <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="Loading.."><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+        
+        </div>
+        <div align='right' class="pytiming col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+           <div align='center' id='pyinnertime'><span align='center'><span id="pyjust">15</span></span></div>
+        </div>
+        <div align='right' class="pyscoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+            <div align='center' id="pyinnerscore">Score:0</div>
+        </div>
+        <br>
+    </div>
+    <div align='center' class="col-12 col-xl-12">
+     <div class="pysect">
+        <div align='center' id="pyquestion" class="pyquestionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                Question
+        </div>
+        <br>
+        <br>
+        <div class="col-12 col-md-12">
+    
+        <button id="o1" class="pyopt"   onclick="pybtnc(0)"> Answer1</button>
+        
+        </div>
+        <br>
+        <div class="col-12 col-md-12">
+        <button id="o2" class="pyopt"  onclick="pybtnc(1)">Answer2</button>
+        </div><br>
+        <div class="col-12 col-md-12">
+        <button id="o3" class="pyopt"  onclick="pybtnc(2)">Answer3</button></div><br>
+        <div class="col-12 col-md-12"><button id="04" class="pyopt" onclick="pybtnc(3)" >Answer4</button></div>
+        <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="pynext" onclick="pynext()">Next</button></div>
+     </div>
+    </div>
+
+    <div align='center' style="color: cornsilk; margin-top: 12vh; border-top: 1px solid rgb(36, 75, 146); padding:10px 5px ; background-color: rgb(32, 85, 184);">
+        <span><span style="font-weight: 900;">TIP</span> :- <span id="pyfoot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+        <p></p>
+    </div>
+        
+    </div>
+        </div>
+
+
+<!-- ...............            pyresult.html ................            ..............-->
+
+    <div>
+    <div class="closing_tab" id='pyres_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+        
+        <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; ">
+            <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600;">Back</span></div>
+            <div style="vertical-align: center;">
+            <img src="iconic.png" width="52px" height="52px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;">AK-Result Sheet</span>
+            </div>
+        </div>
+
+        <div style="margin-bottom:30px;" align='center'>
+            <div id="box">
+                <div class="col-12 col-xl-12 log">
+                    <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="">
+    
+                </div>
+                <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                    <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Name : <span style="color: black; font-weight: 550;" id='show_name'></span>
+                    </div>  
+                    <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Age : <span style="color: black;" id='show_age'></span>
+                    </div> 
+                    <br>
+                    <br>
+                    <br>
+                        <div id='age' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align='center' style="text-align: center; width: 100%; ">
+                            Language : <span>Python</span>
+                        </div>
+                        <br>
+                        <br>
+                <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                    <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='show_score' style="overflow: auto;"></span>
+                    </div> 
+                    <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Grade : <span style="color: #020202;" id='show_grade'></span>
+                    </div>
+                    <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Result : <span style="font-family: cursive; font-weight: bolder;"  id='show_result'></span>
+                    </div> 
+                </div>
+                <p></p>
+                <br>
+    
+                    <div id='msgid' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='show_msg'></span>
+                    </div>
+                    
+                           
+                </div>
+    
+    
+    
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+
+
+
+
+<!-- .........           ........c/c++quiz.html     .................           .........-->
+    <div>
+    <div class='closing_icon' id='cmodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:rgb(162, 202, 226);" align='center'>
+        
+        <div>
+            <div id='modulo_c' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image:linear-gradient(180deg,rgb(34, 142, 161),rgb(245, 245, 236));
+                 color:white;
+                border-radius: 10px;
+                width: 62%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this C/C++ quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="cmakeoff()">Yes</span>
+                </div>
+                <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                    <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.6vw;  float: left;" 
+                    onclick="c_offer()">No</span>
+                </div>
+                
+                
+            </div>
+            </div>
+    
+            <div id='cmodulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                 color:white;
+                border-radius: 10px;
+                width: 50%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span onclick="cres_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                </div>
+                
+                </div>
+                
+                
+            </div>
+            </div>
+    
+    <div style="padding-bottom: 10vh; background-image: linear-gradient(0deg,rgb(30, 17, 151),rgb(183, 212, 216)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+        <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+        <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="Loading.."><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+        
+        </div>
+        <div align='right' class="ctiming col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+           <div align='center' id='cinnertime'><span align='center'><span id="cjust">15</span></span></div>
+        </div>
+        <div align='right' class="cscoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+            <div align='center' id="cinnerscore">Score:0</div>
+        </div>
+        <br>
+    </div>
+    <div align='center' class="col-12 col-xl-12">
+     <div class="csect">
+        <div align='center' id="cquestion" class="cquestionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                Question
+        </div>
+        <br>
+        <br>
+        <div class="col-12 col-md-12">
+    
+        <button id="o1" class="copt"   onclick="cbtnc(0)"> Answer1</button>
+        
+        </div>
+        <br>
+        <div class="col-12 col-md-12">
+        <button id="o2" class="copt"  onclick="cbtnc(1)">Answer2</button>
+        </div><br>
+        <div class="col-12 col-md-12">
+        <button id="o3" class="copt"  onclick="cbtnc(2)">Answer3</button></div><br>
+        <div class="col-12 col-md-12"><button id="04" class="copt" onclick="cbtnc(3)" >Answer4</button></div>
+        <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="cnext" onclick="cnext()">Next</button></div>
+     </div>
+    </div>
+
+    <div align='center' style="color: cornsilk; margin-top: 12vh; border-top: 1px solid rgb(36, 75, 146); padding:10px 5px ; background-color: rgb(32, 85, 184);">
+        <span><span style="font-weight: 900;">TIP</span> :- <span id="cfoot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+        <p></p>
+    </div>
+        
+    </div>
+    </div>
+
+
+<!--           ................        c/c++result.html          ............        -->
+
+    <div>
+    <div class='closing_tab' id='cres_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+        
+        <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; padding-top: 2px; ">
+            <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600;">Back</span></div>
+            <div style="vertical-align: center;">
+            <img src="iconic.png" width="52px" height="52px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;">AK-Result Sheet</span>
+            </div>
+        </div>
+        <div style="margin-bottom:30px;" align='center'>
+            <div id="box">
+                <div class="col-12 col-xl-12 log">
+                    <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="">
+    
+                </div>
+                <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                    <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Name : <span style="color: black; font-weight: 550;" id='cshow_name'></span>
+                    </div>  
+                    <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Age : <span style="color: black;" id='cshow_age'></span>
+                    </div> 
+                    <br>
+                    <br>
+                    <br>
+                        <div id='age' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align='center' style="text-align: center; width: 100%; ">
+                            Language : <span>C/C++</span>
+                        </div>
+                        <br>
+                        <br>
+                <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                    <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='cshow_score' style="overflow: auto;"></span>
+                    </div> 
+                    <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Grade : <span style="color: #020202;" id='cshow_grade'></span>
+                    </div>
+                    <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Result : <span style="font-family: cursive; font-weight: bolder;"  id='cshow_result'></span>
+                    </div> 
+                </div>
+                <p></p>
+                <br>
+    
+                    <div id='msgid' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='cshow_msg'></span>
+                    </div>
+                    
+                           
+                </div>
+    
+    
+    
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+<!--...............................rubyquiz.html   ...............................-->
+
+    <div>
+    <div class="closing_icon" id='rymodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:rgb(231, 217, 212);" align='center'>
+        
+        <div>
+            <div id='modulo_ry' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image:linear-gradient(180deg,rgb(218, 20, 20),rgb(197, 158, 107));
+                 color:white;
+                border-radius: 10px;
+                width: 62%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this Ruby quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="rymakeoff()">Yes</span>
+                </div>
+                <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                    <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.6vw;  float: left;" 
+                    onclick="ry_offer()">No</span>
+                </div>
+                
+                
+            </div>
+            </div>
+    
+            <div id='rymodulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                 color:white;
+                border-radius: 10px;
+                width: 50%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span onclick="ryres_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                </div>
+                
+                </div>
+                
+                
+            </div>
+            </div>
+    
+    <div style="padding-bottom: 10vh; background-image: linear-gradient(0deg,rgb(207, 160, 138),rgb(197, 153, 72)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+        <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+        <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="AK"><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+        
+        </div>
+        <div align='right' class="rytiming col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+           <div align='center' id='ryinnertime'><span align='center'><span id="ryjust">15</span></span></div>
+        </div>
+        <div align='right' class="ryscoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+            <div align='center' id="ryinnerscore">Score:0</div>
+        </div>
+        <br>
+    </div>
+    <div align='center' class="col-12 col-xl-12">
+     <div class="rysect">
+        <div align='center' id="ryquestion" class="ryquestionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                Question
+        </div>
+        <br>
+        <br>
+        <div class="col-12 col-md-12">
+    
+        <button id="o1" class="ryopt"   onclick="rybtnc(0)"> Answer1</button>
+        
+        </div>
+        <br>
+        <div class="col-12 col-md-12">
+        <button id="o2" class="ryopt"  onclick="rybtnc(1)">Answer2</button>
+        </div><br>
+        <div class="col-12 col-md-12">
+        <button id="o3" class="ryopt"  onclick="rybtnc(2)">Answer3</button></div><br>
+        <div class="col-12 col-md-12"><button id="04" class="ryopt" onclick="rybtnc(3)" >Answer4</button></div>
+        <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="rynext" onclick="rynext()">Next</button></div>
+     </div>
+    </div>
+
+    <div align='center' style="color: rgb(233, 231, 224); margin-top: 12vh; border-top: 1px solid rgb(146, 130, 36); padding:10px 5px ; background-color: rgb(180, 140, 67);">
+        <span><span style="font-weight: 900;">TIP</span> :- <span id="ryfoot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+        <p></p>
+    </div>
+        
+    </div>
+    </div>
+
+
+<!--........................          rubyresult.html..............               -->
+
+<div>
+    <div class="closing_tab" id='ryres_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+        
+        <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; ">
+            <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600;">Back</span></div>
+            <div style="vertical-align: center;">
+            <img src="iconic.png" width="52px" height="52px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;">AK-Result Sheet</span>
+            </div>
+        </div>
+        <div style="margin-bottom:30px;" align='center'>
+            <div id="box">
+                <div class="col-12 col-xl-12 log">
+                    <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="">
+    
+                </div>
+                <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                    <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Name : <span style="color: black; font-weight: 550;" id='ryshow_name'></span>
+                    </div>  
+                    <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Age : <span style="color: black;" id='ryshow_age'></span>
+                    </div> 
+                    <br>
+                    <br>
+                    <br>
+                        <div id='age' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align='center' style="text-align: center; width: 100%; ">
+                            Language : <span>Ruby</span>
+                        </div>
+                        <br>
+                        <br>
+                <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                    <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='ryshow_score' style="overflow: auto;"></span>
+                    </div> 
+                    <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Grade : <span style="color: #020202;" id='ryshow_grade'></span>
+                    </div>
+                    <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Result : <span style="font-family: cursive; font-weight: bolder;"  id='ryshow_result'></span>
+                    </div> 
+                </div>
+                <p></p>
+                <br>
+    
+                    <div id='msgid' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='ryshow_msg'></span>
+                    </div>
+                    
+                           
+                </div>
+    
+    
+    
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+
+
+<!--...............................webquiz.html   ...............................-->
+
+    <div>
+    <div class="closing_icon" id='webmodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:rgb(231, 217, 212);" align='center'>
+        
+        <div>
+            <div id='modulo_web' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image:linear-gradient(180deg,rgb(228, 129, 15),rgb(107, 154, 197),rgb(100,100,0));
+                 color:white;
+                border-radius: 10px;
+                width: 62%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this Front end quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="webmakeoff()">Yes</span>
+                </div>
+                <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                    <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.6vw;  float: left;" 
+                    onclick="web_offer()">No</span>
+                </div>
+                
+                
+            </div>
+            </div>
+    
+            <div id='webmodulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                 color:white;
+                border-radius: 10px;
+                width: 50%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span onclick="webres_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                </div>
+                
+                </div>
+                
+                
+            </div>
+            </div>
+    
+    <div style="padding-bottom: 10vh; background-image: linear-gradient(0deg,rgb(173, 159, 31),rgb(44, 131, 212)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+        <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+        <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="Loading.."><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+        
+        </div>
+        <div align='right' class="webtiming col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+           <div align='center' id='webinnertime'><span align='center'><span id="webjust">15</span></span></div>
+        </div>
+        <div align='right' class="webscoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+            <div align='center' id="webinnerscore">Score:0</div>
+        </div>
+        <br>
+    </div>
+    <div align='center' class="col-12 col-xl-12">
+     <div class="websect">
+        <div align='center' id="webquestion" class="webquestionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                Question
+        </div>
+        <br>
+        <br>
+        <div class="col-12 col-md-12">
+    
+        <button id="o1" class="webopt"   onclick="webbtnc(0)"> Answer1</button>
+        
+        </div>
+        <br>
+        <div class="col-12 col-md-12">
+        <button id="o2" class="webopt"  onclick="webbtnc(1)">Answer2</button>
+        </div><br>
+        <div class="col-12 col-md-12">
+        <button id="o3" class="webopt"  onclick="webbtnc(2)">Answer3</button></div><br>
+        <div class="col-12 col-md-12"><button id="04" class="webopt" onclick="webbtnc(3)" >Answer4</button></div>
+        <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="webnext" onclick="webnext()">Next</button></div>
+     </div>
+    </div>
+
+    <div align='center' style="color: rgb(233, 231, 224); margin-top: 12vh; border-top: 1px solid rgb(146, 130, 36); padding:10px 5px ; background-color: rgb(180, 140, 67);">
+        <span><span style="font-weight: 900;">TIP</span> :- <span id="webfoot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+        <p></p>
+    </div>
+        
+    </div>
+    </div>
+
+
+<!--........................          webresult.html..............               -->
+
+<div>
+    <div class="closing_tab" id='webres_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+        
+        <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; ">
+            <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600;">Back</span></div>
+            <div style="vertical-align: center;">
+            <img src="iconic.png" width="52px" height="52px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;">AK-Result Sheet</span>
+            </div>
+        </div>
+        <div style="margin-bottom:30px;" align='center'>
+            <div id="box">
+                <div class="col-12 col-xl-12 log">
+                    <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="">
+    
+                </div>
+                <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                    <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Name : <span style="color: black; font-weight: 550;" id='webshow_name'></span>
+                    </div>  
+                    <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Age : <span style="color: black;" id='webshow_age'></span>
+                    </div> 
+                    <br>
+                    <br>
+                    <br>
+                        <div id='age' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align='center' style="text-align: center; width: 100%; ">
+                            Language : <span>Front End Coding </span>
+                        </div>
+                        <br>
+                        <br>
+                <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                    <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='webshow_score' style="overflow: auto;"></span>
+                    </div> 
+                    <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Grade : <span style="color: #020202;" id='webshow_grade'></span>
+                    </div>
+                    <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Result : <span style="font-family: cursive; font-weight: bolder;"  id='webshow_result'></span>
+                    </div> 
+                </div>
+                <p></p>
+                <br>
+    
+                    <div id='msgid' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='webshow_msg'></span>
+                    </div>
+                    
+                           
+                </div>
+    
+    
+    
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+<!-- .........           ........javaquiz.html     .................           .........-->
+<div>
+    <div class='closing_icon' id='jvmodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:rgb(184, 206, 219);" align='center'>
+        
+        <div>
+            <div id='modulo_jv' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image:linear-gradient(180deg,rgb(161, 127, 34),rgb(56, 139, 172));
+                 color:white;
+                border-radius: 10px;
+                width: 62%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this Java quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="jvmakeoff()">Yes</span>
+                </div>
+                <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                    <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.6vw;  float: left;" 
+                    onclick="jv_offer()">No</span>
+                </div>
+                
+                
+            </div>
+            </div>
+    
+            <div id='jvmodulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+            
+                <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                 color:white;
+                border-radius: 10px;
+                width: 50%;
+                height: 300px;
+                margin-top: 10%;">
+                    
+                    <br>
+                    <br>
+                
+                    <div style="padding: 5px;">
+                    <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                 </div>
+                
+                 <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                    <span onclick="jvres_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                </div>
+                
+                </div>
+                
+                
+            </div>
+            </div>
+    
+    <div style="padding-bottom: 10vh; background-image: linear-gradient(0deg,rgb(177, 142, 46),rgb(106, 172, 180)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+        <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+        <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="Loading.."><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+        
+        </div>
+        <div align='right' class="jvtiming col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+           <div align='center' id='jvinnertime'><span align='center'><span id="jvjust">15</span></span></div>
+        </div>
+        <div align='right' class="jvscoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+            <div align='center' id="jvinnerscore">Score:0</div>
+        </div>
+        <br>
+    </div>
+    <div align='center' class="col-12 col-xl-12">
+     <div class="jvsect">
+        <div align='center' id="jvquestion" class="jvquestionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                Question
+        </div>
+        <br>
+        <br>
+        <div class="col-12 col-md-12">
+    
+        <button id="o1" class="jvopt"   onclick="jvbtnc(0)"> Answer1</button>
+        
+        </div>
+        <br>
+        <div class="col-12 col-md-12">
+        <button id="o2" class="jvopt"  onclick="jvbtnc(1)">Answer2</button>
+        </div><br>
+        <div class="col-12 col-md-12">
+        <button id="o3" class="jvopt"  onclick="jvbtnc(2)">Answer3</button></div><br>
+        <div class="col-12 col-md-12"><button id="04" class="jvopt" onclick="jvbtnc(3)" >Answer4</button></div>
+        <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="jvnext" onclick="jvnext()">Next</button></div>
+     </div>
+    </div>
+
+    <div align='center' style="color: rgb(255, 255, 255); margin-top: 12vh; border-top: 1px solid rgb(146, 117, 36); padding:10px 5px ; background-color: rgb(206, 158, 28);">
+        <span><span style="font-weight: 900;">TIP</span> :- <span id="jvfoot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+        <p></p>
+    </div>
+        
+    </div>
+    </div>
+
+
+<!--           ................        javaresult.html          ............        -->
+
+    <div>
+    <div class='closing_tab' id='jvres_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+        
+        <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; padding-top: 2px; ">
+            <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600;">Back</span></div>
+            <div style="vertical-align: center;">
+            <img src="iconic.png" width="52px" height="52px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;">AK-Result Sheet</span>
+            </div>
+        </div>
+        <div style="margin-bottom:30px;" align='center'>
+            <div id="box">
+                <div class="col-12 col-xl-12 log">
+                    <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="AK">
+    
+                </div>
+                <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                    <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Name : <span style="color: black; font-weight: 550;" id='jvshow_name'></span>
+                    </div>  
+                    <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        Age : <span style="color: black;" id='jvshow_age'></span>
+                    </div> 
+                    <br>
+                    <br>
+                    <br>
+                        <div id='age' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align='center' style="text-align: center; width: 100%; ">
+                            Language : <span>Java</span>
+                        </div>
+                        <br>
+                        <br>
+                <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                    <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='jvshow_score' style="overflow: auto;"></span>
+                    </div> 
+                    <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Grade : <span style="color: #020202;" id='jvshow_grade'></span>
+                    </div>
+                    <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        Result : <span style="font-family: cursive; font-weight: bolder;"  id='jvshow_result'></span>
+                    </div> 
+                </div>
+                <p></p>
+                <br>
+    
+                    <div id='msgid' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='jvshow_msg'></span>
+                    </div>
+                    
+                           
+                </div>
+    
+    
+    
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+
+
+
+
+
+
+<!--...............................swiftquiz.html   ...............................-->
+
+    <div>
+        <div class="closing_icon" id='swmodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:rgb(255,243,203);" align='center'>
+            
+            <div>
+                <div id='modulo_sw' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+                
+                    <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image:linear-gradient(180deg,rgb(218, 20, 20),rgb(255, 255, 255));
+                     color:white;
+                    border-radius: 10px;
+                    width: 62%;
+                    height: 300px;
+                    margin-top: 10%;">
+                        
+                        <br>
+                        <br>
+                    
+                        <div style="padding: 5px;">
+                        <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this Ruby quiz </span>
+                     </div>
+                    
+                     <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                        <span  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="swmakeoff()">Yes</span>
+                    </div>
+                    <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                        <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.6vw;  float: left;" 
+                        onclick="sw_offer()">No</span>
+                    </div>
+                    
+                    
+                </div>
+                </div>
+        
+                <div id='swmodulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+                
+                    <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                     color:white;
+                    border-radius: 10px;
+                    width: 50%;
+                    height: 300px;
+                    margin-top: 10%;">
+                        
+                        <br>
+                        <br>
+                    
+                        <div style="padding: 5px;">
+                        <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                     </div>
+                    
+                     <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                        <span onclick="swres_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                    </div>
+                    
+                    </div>
+                    
+                    
+                </div>
+                </div>
+        
+        <div style="padding-bottom: 10vh; background-image: linear-gradient(180deg,rgb(248, 83, 7),rgb(255, 255, 255)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+            <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+            <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="AK"><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+            
+            </div>
+            <div align='right' class="swtiming col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+               <div align='center' id='swinnertime'><span align='center'><span id="swjust">15</span></span></div>
+            </div>
+            <div align='right' class="swscoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                <div align='center' id="swinnerscore">Score:0</div>
+            </div>
+            <br>
+        </div>
+        <div align='center' class="col-12 col-xl-12">
+         <div class="swsect">
+            <div align='center' id="swquestion" class="swquestionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                    Question
+            </div>
+            <br>
+            <br>
+            <div class="col-12 col-md-12">
+        
+            <button id="o1" class="swopt"   onclick="swbtnc(0)"> Answer1</button>
+            
+            </div>
+            <br>
+            <div class="col-12 col-md-12">
+            <button id="o2" class="swopt"  onclick="swbtnc(1)">Answer2</button>
+            </div><br>
+            <div class="col-12 col-md-12">
+            <button id="o3" class="swopt"  onclick="swbtnc(2)">Answer3</button></div><br>
+            <div class="col-12 col-md-12"><button id="04" class="swopt" onclick="swbtnc(3)" >Answer4</button></div>
+            <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="swnext" onclick="swnext()">Next</button></div>
+         </div>
+        </div>
+    
+        <div align='center' style="color: rgb(233, 231, 224); margin-top: 12vh; border-top: 1px solid rgb(146, 130, 36); padding:10px 5px ; background-color: rgb(248, 83, 7);">
+            <span><span style="font-weight: 900;">TIP</span> :- <span id="swfoot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+            <p></p>
+        </div>
+            
+        </div>
+        </div>
+    
+    
+    <!--........................          swiftresult.html..............               -->
+    
+    <div>
+        <div class="closing_tab" id='swres_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+            
+            <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; ">
+                <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600;">Back</span></div>
+                <div style="vertical-align: center;">
+                <img src="iconic.png" width="52px" height="52px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;">AK-Result Sheet</span>
+                </div>
+            </div>
+            <div style="margin-bottom:30px;" align='center'>
+                <div id="box">
+                    <div class="col-12 col-xl-12 log">
+                        <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="AK">
+        
+                    </div>
+                    <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                        <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            Name : <span style="color: black; font-weight: 550;" id='swshow_name'></span>
+                        </div>  
+                        <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            Age : <span style="color: black;" id='swshow_age'></span>
+                        </div> 
+                        <br>
+                        <br>
+                        <br>
+                        <div id='age' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align='center' style="text-align: center; width: 100%; ">
+                            Language : <span>Swift</span>
+                        </div>
+                        <br>
+                        <br>
+                    <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                        <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='swshow_score' style="overflow: auto;"></span>
+                        </div> 
+                        <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Grade : <span style="color: #020202;" id='swshow_grade'></span>
+                        </div>
+                        <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Result : <span style="font-family: cursive; font-weight: bolder;"  id='swshow_result'></span>
+                        </div> 
+                    </div>
+                    <p></p>
+                    <br>
+        
+                        <div id='msgid' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='swshow_msg'></span>
+                        </div>
+                        
+                               
+                    </div>
+        
+        
+        
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    
+    
+
+<!--...............................phpquiz.html   ...............................-->
+
+    <div>
+        <div class="closing_icon" id='phmodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:rgb(221, 222, 235);" align='center'>
+            
+            <div>
+                <div id='modulo_ph' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+                
+                    <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image:linear-gradient(180deg,rgb(145, 20, 218),rgb(0, 0, 0));
+                     color:white;
+                    border-radius: 10px;
+                    width: 62%;
+                    height: 300px;
+                    margin-top: 10%;">
+                        
+                        <br>
+                        <br>
+                    
+                        <div style="padding: 5px;">
+                        <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this php quiz </span>
+                     </div>
+                    
+                     <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                        <span  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="phmakeoff()">Yes</span>
+                    </div>
+                    <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                        <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.6vw;  float: left;" 
+                        onclick="ph_offer()">No</span>
+                    </div>
+                    
+                    
+                </div>
+                </div>
+        
+                <div id='phmodulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+                
+                    <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                     color:white;
+                    border-radius: 10px;
+                    width: 50%;
+                    height: 300px;
+                    margin-top: 10%;">
+                        
+                        <br>
+                        <br>
+                    
+                        <div style="padding: 5px;">
+                        <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                     </div>
+                    
+                     <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                        <span onclick="phres_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                    </div>
+                    
+                    </div>
+                    
+                    
+                </div>
+                </div>
+        
+        <div style="padding-bottom: 10vh; background-image: linear-gradient(0deg,rgb(121, 18, 218),rgb(0, 0, 0)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+            <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+            <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="AK"><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+            
+            </div>
+            <div align='right' class="phtiming col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+               <div align='center' id='phinnertime'><span align='center'><span id="phjust">15</span></span></div>
+            </div>
+            <div align='right' class="phscoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                <div align='center' id="phinnerscore">Score:0</div>
+            </div>
+            <br>
+        </div>
+        <div align='center' class="col-12 col-xl-12">
+         <div class="phsect">
+            <div align='center' id="phquestion" class="phquestionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                    Question
+            </div>
+            <br>
+            <br>
+            <div class="col-12 col-md-12">
+        
+            <button id="o1" class="phopt"   onclick="phbtnc(0)"> Answer1</button>
+            
+            </div>
+            <br>
+            <div class="col-12 col-md-12">
+            <button id="o2" class="phopt"  onclick="phbtnc(1)">Answer2</button>
+            </div><br>
+            <div class="col-12 col-md-12">
+            <button id="o3" class="phopt"  onclick="phbtnc(2)">Answer3</button></div><br>
+            <div class="col-12 col-md-12"><button id="04" class="phopt" onclick="phbtnc(3)" >Answer4</button></div>
+            <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="phnext" onclick="phnext()">Next</button></div>
+         </div>
+        </div>
+    
+        <div align='center' style="color: rgb(233, 231, 224); margin-top: 12vh; border-top: 1px solid rgb(97, 22, 112); padding:10px 5px ; background-image: linear-gradient(0deg,black,rgb(113, 14, 179));">
+            <span><span style="font-weight: 900;">TIP</span> :- <span id="phfoot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+            <p></p>
+        </div>
+            
+        </div>
+        </div>
+    
+    
+    <!--........................          phpresult.html..............               -->
+    
+    <div>
+        <div class="closing_tab" id='phres_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+            
+            <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; ">
+                <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600;">Back</span></div>
+                <div style="vertical-align: center;">
+                <img src="iconic.png" width="52px" height="52px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;">AK-Result Sheet</span>
+                </div>
+            </div>
+            <div style="margin-bottom:30px;" align='center'>
+                <div id="box">
+                    <div class="col-12 col-xl-12 log">
+                        <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="">
+        
+                    </div>
+                    <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                        <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            Name : <span style="color: black; font-weight: 550;" id='phshow_name'></span>
+                        </div>  
+                        <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            Age : <span style="color: black;" id='phshow_age'></span>
+                        </div> 
+                        <br>
+                        <br>
+                        <br>
+                        <div id='age' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align='center' style="text-align: center; width: 100%; ">
+                            Language : <span>PHP</span>
+                        </div>
+                        <br>
+                        <br>
+                    <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                        <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='phshow_score' style="overflow: auto;"></span>
+                        </div> 
+                        <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Grade : <span style="color: #020202;" id='phshow_grade'></span>
+                        </div>
+                        <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Result : <span style="font-family: cursive; font-weight: bolder;"  id='phshow_result'></span>
+                        </div> 
+                    </div>
+                    <p></p>
+                    <br>
+        
+                        <div id='msgid' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='phshow_msg'></span>
+                        </div>
+                        
+                               
+                    </div>
+        
+        
+        
+                </div>
+            </div>
+            
+        </div>
+        </div>
+
+
+              
+<!--...............................dartquiz.html   ...............................-->
+
+    <div>
+        <div class="closing_icon" id='dtmodulo' style="overflow: auto;   position:fixed; top: 0%; z-index:15;display:none;margin: 0px; width: 100%; height:100vh; background-color:rgb(221, 222, 235);" align='center'>
+            
+            <div>
+                <div id='modulo_dt' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+                
+                    <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-image:linear-gradient(180deg,rgb(20, 56, 218),rgb(138, 200, 219));
+                     color:white;
+                    border-radius: 10px;
+                    width: 62%;
+                    height: 300px;
+                    margin-top: 10%;">
+                        
+                        <br>
+                        <br>
+                    
+                        <div style="padding: 5px;">
+                        <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; ">Are you ready to enroll in this Dart quiz </span>
+                     </div>
+                    
+                     <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                        <span  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: teal; margin-left: 6.6vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; "  onclick="dtmakeoff()">Yes</span>
+                    </div>
+                    <div align='center' class="col-12 col-xl-6" style="width: 50%;"> 
+                        <span  style="border: 1px solid black; min-width: 14vw; border-radius: 10px; cursor: pointer; background-color: red; color: whitesmoke; max-width: fit-content; margin: 10px;  padding-right:5px; margin-left: 6.5vw;  float: left;" 
+                        onclick="dt_offer()">No</span>
+                    </div>
+                    
+                    
+                </div>
+                </div>
+        
+                <div id='dtmodulo2' style="   position:fixed; left: 0%; top: 0%; z-index:16;display:none;margin: 0px; width: 100%; height:100vh; background-color: rgba(0,0,0,0.6); padding: 2px;" align='center'>
+                
+                    <div align='center' style="box-shadow: 1px 1px rgb(0, 0, 0); overflow:auto; -moz-box-shadow:2px 17px 17px rgba(0,0,0,0.7); -webkit-box-shadow:2px 17px 17px rgba(0,0,0,0.5); background-color:rgba(34, 182, 46, 0.9);
+                     color:white;
+                    border-radius: 10px;
+                    width: 50%;
+                    height: 300px;
+                    margin-top: 10%;">
+                        
+                        <br>
+                        <br>
+                    
+                        <div style="padding: 5px;">
+                        <span align='center' style=" font-weight: 700; font-size: 22px; margin-top: 7px; padding-top: 22px; color: rgb(214, 230, 198);">You have successfully completed the quiz </span>
+                     </div>
+                    
+                     <div align='center' class="col-12 col-xl-6" style="width: 50%; margin-top: 5vh;">
+                        <span onclick="dtres_open_result()"  style="min-width:14vw;cursor: pointer; border-radius: 10px; margin: 10px;  padding-right:5px; color: whitesmoke; background-color: rgb(3, 109, 109); margin-left: 2vw;  float: left; max-width: fit-content; padding: 2px; border: 1px solid black; color: blanchedalmond; box-shadow: 1px 1px black; text-decoration: none; border: none; padding: 7px;">proceed</span>
+                    </div>
+                    
+                    </div>
+                    
+                    
+                </div>
+                </div>
+        
+        <div style="padding-bottom: 10vh; background-image: linear-gradient(0deg,rgb(18, 98, 218),rgb(26, 5, 145)); height: 10.5rem; padding-bottom: 8rem; border-radius: 0 0 10px 10px;  " class="col-12 col-xl-12">
+            <div align='left' style="margin: 0px; padding: 0px; " class="col-12 col-xl-12">
+            <img src="iconic.png" width="37px" height="37px" style="margin: 10px; margin-left: 0px;" alt="AK"><span style="color: blanchedalmond; font-weight: 700; font-size: 17px;">AK-Learn To Code</span>
+            
+            </div>
+            <div align='right' class="dttiming col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+               <div align='center' id='dtinnertime'><span align='center'><span id="dtjust">15</span></span></div>
+            </div>
+            <div align='right' class="dtscoring col-6 col-sm-6 col-md-6 col-xl-6 col-lg-6">
+                <div align='center' id="dtinnerscore">Score:0</div>
+            </div>
+            <br>
+        </div>
+        <div align='center' class="col-12 col-xl-12">
+         <div class="dtsect">
+            <div align='center' id="dtquestion" class="dtquestionbank col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12" style="font-weight: 600;">
+                    Question
+            </div>
+            <br>
+            <br>
+            <div class="col-12 col-md-12">
+        
+            <button id="o1" class="dtopt"   onclick="dtbtnc(0)"> Answer1</button>
+            
+            </div>
+            <br>
+            <div class="col-12 col-md-12">
+            <button id="o2" class="dtopt"  onclick="dtbtnc(1)">Answer2</button>
+            </div><br>
+            <div class="col-12 col-md-12">
+            <button id="o3" class="dtopt"  onclick="dtbtnc(2)">Answer3</button></div><br>
+            <div class="col-12 col-md-12"><button id="04" class="dtopt" onclick="dtbtnc(3)" >Answer4</button></div>
+            <div align='right' style="margin-top: 25px; margin-bottom: 2vh;" class="col-12 col-xl-12"><button style=" border: 1px solid rgb(14, 87, 90); border-radius: 15px; background-color: white; color: cadetblue; padding: 5px; cursor:grabbing;" id="dtnext" onclick="dtnext()">Next</button></div>
+         </div>
+        </div>
+    
+        <div align='center' style="color: rgb(233, 231, 224); margin-top: 12vh; border-top: 1px solid rgb(97, 22, 112); padding:10px 5px ; background-image: linear-gradient(0deg,black,rgb(40, 70, 206));">
+            <span><span style="font-weight: 900;">TIP</span> :- <span id="dtfoot"> Always give more preference to <span style="font-style: italic;">logic</span> than coding</span></span>
+            <p></p>
+        </div>
+            
+        </div>
+        </div>
+    
+    
+    <!--........................          dartresult.html..............               -->
+    
+    <div>
+        <div class="closing_tab" id='dtres_modulo' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-image: linear-gradient(180deg, rgb(157, 185, 201),rgb(62, 132, 173),rgb(62, 132, 173) ,rgba(104, 166, 224, 0.99));" align='center'>
+            
+            <div style="width: 100%; background-color: rgb(40, 91, 185); padding: 7px; ">
+                <div align='left' style="width: 100%;" ><span onclick="quizbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 3px 10px; font-weight: 600;">Back</span></div>
+                <div style="vertical-align: center;">
+                <img src="iconic.png" width="52px" height="52px" alt=""> <span style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; padding-left: 6px; font-size: 3vw;">AK-Result Sheet</span>
+                </div>
+            </div>
+            <div style="margin-bottom:30px;" align='center'>
+                <div id="box">
+                    <div class="col-12 col-xl-12 log">
+                        <img src="iconic.png" width="100px" style="border: 2px solid rgb(9, 9, 94); border-radius: 100%;" alt="">
+        
+                    </div>
+                    <div style="margin-top:14px;" align='left' class="col-12 col-xl-12">
+                        <div id='name' class="col-7 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            Name : <span style="color: black; font-weight: 550;" id='dtshow_name'></span>
+                        </div>  
+                        <div id='age' class="col-5 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            Age : <span style="color: black;" id='dtshow_age'></span>
+                        </div> 
+                        <br>
+                        <br>
+                        <br>
+                        <div id='age' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" align='center' style="text-align: center; width: 100%; ">
+                            Language : <span>Dart</span>
+                        </div>
+                        <br>
+                        <br>
+
+                    <div style="margin-bottom: 15px; margin-top: 15px; background-color: rgb(45, 133, 103);">
+                        <div id='scrr' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Score : <span style="color: blue; font-weight: 700; font-family: sans-serif;" id='dtshow_score' style="overflow: auto;"></span>
+                        </div> 
+                        <div id='grd' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Grade : <span style="color: #020202;" id='dtshow_grade'></span>
+                        </div>
+                        <div id='resultid' class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                            Result : <span style="font-family: cursive; font-weight: bolder;"  id='dtshow_result'></span>
+                        </div> 
+                    </div>
+                    <p></p>
+                    <br>
+        
+                        <div id='msgid' class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            Message : <span style="color: rgb(70, 5, 70); font-family: Georgia, 'Times New Roman', Times, serif;" id='dtshow_msg'></span>
+                        </div>
+                        
+                               
+                    </div>
+        
+        
+        
+                </div>
+            </div>
+            
+        </div>
+        </div>
+
+
+
+
+<!--Certificate generator-->
+
+    <div>
+        <div id='cert_id' style="overflow: auto;   position:fixed; top: 0%; z-index:20; display:none; margin: 0px; width: 100%; height:100vh;  background-color: rgba(0, 0, 0, 0.89);" align='center'>
+            <div style="width: 100%; padding: 7px; ">
+                <div align='left' style="width: 100%; position: fixed; margin-right: 20px;" ><span onclick="certbackbutton()" style="cursor: pointer; border: 1px solid rgb(18, 38, 128); border-top: none; border-left: none; color: white; border-radius: 3px 3px 3px 3px; background-color:  rgb(30, 142, 218); margin-top: 0px; padding: 2px 10px; font-weight: 600; margin-top: 0; margin-right: 0;">Back</span></div>
+        
+            </div>
+    <div style="margin-bottom:30px;" align='center'>
+          <div>
+            <div>
+    
+    
+    
+           
+            <br>
+            <style>
+            #download-btn:hover{
+                background-color: rgb(29, 221, 235);
+            }
+            
+    </style>
+            </div>
+        </div>
+        <div style="padding: 1% 5% 0% 5%;">     
+        
+        <canvas id="canvas" width="400px" height="300px" style="border-radius: 5px; border: 2px outset white; width: 94%; max-height:500px ; max-width: 750px; "></canvas>
+        </div>
+        <br>
+            <div align='center' style="margin-top:8px;">
+            <a href="#" id="download-btn" style=" font-weight: 700; font-size: 22px; text-decoration:none; padding: 10px 20px; background-color:rgb(3,186,227); color: white; border-radius: 4px;">Download</a>
+            </div>
+
+
+
+        
+        </div>
+    
+    </div>
+    </div>
+
+
+
+    
+    
+
+
+    
+    
+<!--<script>
+    $("#canvas").outerHeight($(window).height()-$("#canvas").offset().top-Math.abs( $("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
+</script>
+-->
+
+
+   <script src="script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="jquery-3.5.1.min.js"></script>
+</body>
+
+<footer>
+    
+    <div align='center' class="bottom">
+
+        <a href="https://instagram.com/a.k_thecoder?utm_medium=copy_link"><img src="inst_black.PNG" alt="" width="25px" height="25px" style="border-radius: 100%;"></a>
+        <a href="id.PNG"><img src="dis_black.PNG" alt="" width="25px" height="25px" style="border-radius: 100%; margin-left: 5px;"></a>
+        <br>
+        <br>
+       <a href="mailto: aklearntocode@gmail.com" style="text-decoration: none;"><span style="margin-bottom: 4px; color: rgb(235, 228, 228); font-weight: 600;"><img src="mail.jpeg" width="35px" height="35px" alt="" style="margin-right: 5px; border-radius: 100%;">aklearntocode@gmail.com</span></a>
+       <br>
+       <p></p>
+        <span style="color: white;"> Copywrite &#169; 2021 owned by AK</span>
+        
+        <p>AK-Learn To Code is optimized for training and learning. It also offers you a complete privacy without any loopholes</p>
+       
+       <p>The whole web app is created by AK including all contents,<br>So if you need a website for a small package just <a href="contact.html" style="color: rgb(255, 8, 82); font-weight: 600; ">consult me</a></p>
+        <br>
+    </div>
+</footer>
+</html>
